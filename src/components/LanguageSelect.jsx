@@ -8,9 +8,9 @@ const LanguageSelect = ({ onChange, value }) => {
 	const dropdownRef = useRef(null)
 
 	const languages = [
-		{ code: 'uz', name: 'O\'zbek', flag: "🇺🇿" },
-		{ code: 'ru', name: 'Русский', flag: "🇷🇺" },
-		{ code: 'en', name: 'English', flag: "🇬🇧" },
+		{ code: 'uz', name: 'O\'zbek', flag: ["🇺🇿"] },
+		{ code: 'ru', name: 'Русский', flag: ["🇷🇺"] },
+		{ code: 'en', name: 'English', flag: ["🇬🇧"] },
 	]
 
 	useEffect(() => {

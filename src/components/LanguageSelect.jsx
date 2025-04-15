@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Uzbekistan from '../assets/uz.png'
+import Russia from '../assets/ru.png'
+import England from '../assets/en.png'
 
 const LanguageSelect = ({ onChange, value }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const dropdownRef = useRef(null)
 
 	const languages = [
-		{ code: 'uz', name: 'O\'zbek', flag: '🇺🇿' },
-		{ code: 'ru', name: 'Русский', flag: '🇷🇺' },
-		{ code: 'en', name: 'English', flag: '🇬🇧' },
+		{ code: 'uz', name: 'O\'zbek', flag: "🇺🇿" },
+		{ code: 'ru', name: 'Русский', flag: "🇷🇺" },
+		{ code: 'en', name: 'English', flag: "🇬🇧" },
 	]
 
 	useEffect(() => {
